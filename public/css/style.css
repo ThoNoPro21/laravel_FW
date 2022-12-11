@@ -1,0 +1,337 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #f4f4f4;
+}
+.container {
+  margin: 40px auto;
+}
+#header {
+  width: 100%;
+  height: 60px;
+  box-shadow: 5px 5px 15px #e8e8e8;
+}
+.col-lg-4,
+.col-md-6 {
+  padding-right: 0;
+}
+
+
+.navbar {
+  display: inline-flex;
+}
+.pagination .page-item .page-link {
+  color: #333;
+  border: none;
+  width: 40px;
+  text-align: center;
+}
+.pagination .page-item.active .page-link {
+  background-color: #fff;
+  border: 1px solid #333;
+}
+select {
+  outline: none;
+  padding: 6px 12px;
+  margin: 0px 4px;
+  color: #999;
+  font-size: 0.85rem;
+  width: 140px;
+}
+#select2 {
+  border: 1px solid #777;
+  color: #999;
+}
+#pro {
+  border: none;
+  color: #333;
+  font-weight: 700;
+  padding-left: 0px;
+  width: initial;
+}
+
+
+
+label {
+  cursor: pointer;
+}
+
+
+.box {
+  padding: 10px;
+}
+.box-label {
+  color: #11698e;
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+#inner-box,
+#inner-box2 {
+  height: 150px;
+  overflow-y: scroll;
+}
+#inner-box2 {
+  height: 132px;
+}
+#inner-box::-webkit-scrollbar,
+#inner-box2::-webkit-scrollbar {
+  width: 6px;
+}
+#inner-box::-webkit-scrollbar-track,
+#inner-box2::-webkit-scrollbar-track {
+  background-color: #ddd;
+  border-radius: 2px;
+}
+#inner-box::-webkit-scrollbar-thumb,
+#inner-box2::-webkit-scrollbar-thumb {
+  background-color: #333;
+  border-radius: 2px;
+}
+#price {
+  height: 45px;
+}
+#size input[type="checkbox"] {
+  visibility: hidden;
+}
+#size input[type="checkbox"]:checked {
+  background-color: #16c79a;
+  border: none;
+}
+#size .btn.btn-success {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  width: 40px;
+  font-size: 0.8rem;
+  border-radius: 0;
+}
+#size .btn.btn-success:hover {
+  background-color: #aff1e1;
+  color: #444;
+}
+#size .btn-success:not(:disabled):not(.disabled).active,
+#size .btn-success:not(:disabled):not(.disabled):active {
+  background-color: #16c79a;
+  color: #fff;
+}
+#size label {
+  margin: 10px;
+  margin-left: 0px;
+}
+
+span{
+    border: #ccc solid 0.5px;
+}
+.card {
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s all ease-in-out;
+  height: 350px;
+}
+.card:hover {
+  box-shadow: 2px 2px 15px #fd9a6ce5;
+  transform: scale(1.02);
+}
+.card .product-name {
+  font-weight: 600;
+}
+.card-body {
+  padding-bottom: 0;
+}
+.card .text-muted {
+  font-size: 0.82rem;
+}
+.card-img img {
+  padding-top: 10px;
+  width: inherit;
+  height: 180px;
+  object-fit: contain;
+  display: block;
+}
+.card-body .btn-group .btn {
+  padding: 0;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border-radius: 50%;
+  position: relative;
+}
+.card-body .btn-group > .btn-group:not(:last-child) > .btn,
+.card-body .btn-group > .btn:not(:last-child):not(.dropdown-toggle) {
+  border-radius: 50%;
+  transition: ease-in all 0.4s;
+}
+.card-body input[type="radio"] {
+  visibility: hidden;
+}
+.card-body .btn:not(:disabled):not(.disabled).active::after,
+.card-body .btn:not(:disabled):not(.disabled):active::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  top: 4px;
+  left: 4.2px;
+  background-color: #fff;
+  position: absolute;
+  transition: ease-in all 0.4s;
+}
+.card-body .btn.btn-light:not(:disabled):not(.disabled).active::after,
+.card-body .btn.btn-light:not(:disabled):not(.disabled):active::after {
+  background-color: #000;
+}
+#avail-size input[type="checkbox"] {
+  visibility: hidden;
+}
+#avail-size input[type="checkbox"]:checked {
+  background-color: #16c79a;
+  border: none;
+}
+#avail-size .btn.btn-success {
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  width: 20px;
+  font-size: 0.7rem;
+  border-radius: 0;
+  padding: 0;
+}
+#avail-size .btn.btn-success:hover {
+  background-color: #aff1e1;
+  color: #444;
+}
+#avail-size .btn-success:not(:disabled):not(.disabled).active,
+#avail-size .btn-success:not(:disabled):not(.disabled):active {
+  background-color: #16c79a;
+  color: #fff;
+}
+#avail-size label {
+  margin: 10px;
+  margin-left: 0px;
+}
+#shirt {
+  height: 170px;
+}
+.middle {
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+}
+
+nav{
+    width: 100% !important;
+}
+
+
+
+input[type="range"] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+  z-index: 2;
+  height: 10px;
+  width: 100%;
+  opacity: 0;
+}
+input[type="range"]::-webkit-slider-thumb {
+  pointer-events: all;
+  width: 30px;
+  height: 30px;
+  border-radius: 0;
+  border: 0 none;
+  background-color: red;
+  -webkit-appearance: none;
+}
+.del {
+  text-decoration: line-through;
+  color: red;
+}
+@media (min-width: 1199.6px) {
+  #filterbar {
+    width: 25%;
+  }
+}
+@media (max-width: 1199.5px) {
+  #filterbar {
+    width: 28%;
+  }
+  .card {
+    height: 350px;
+  }
+  .price {
+    font-size: 0.9rem;
+  }
+  .product-name {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 991.5px) {
+  .navbar-nav {
+    min-width: 290px;
+    position: absolute;
+    left: -168px;
+    bottom: -146px;
+    padding: 20px 10px;
+    display: block;
+    background-image: none;
+    z-index: 2;
+    background-color: #1d1c1cb2;
+  }
+  #filterbar {
+    width: 36%;
+  }
+  #sort {
+    background-color: inherit;
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  #sort option,
+  #pro option {
+    color: #000;
+  }
+  #pro,
+  #select2,
+  .result {
+    background-color: inherit;
+    color: #fff;
+  }
+  .card {
+    height: 345px;
+  }
+  .price {
+    font-size: 0.85rem;
+  }
+}
+@media (max-width: 767.5px) {
+  #filterbar {
+    width: 50%;
+  }
+}
+@media (max-width: 525.5px) {
+  #filterbar {
+    float: none;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 5px;
+  }
+  #content.my-5 {
+    margin-top: 20px !important;
+    margin-bottom: 20px !important;
+  }
+  .col-lg-4,
+  .col-md-6 {
+    padding-left: 0;
+  }
+}
+@media (max-width: 500.5px) {
+  .pagination {
+    display: none;
+  }
+}
